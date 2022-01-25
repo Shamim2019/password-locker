@@ -36,6 +36,12 @@ def display_accounts():
     return credentials.display_accounts()
 
 def main():
-     
+    while True:
+        print("Welcome to password locker write SU or LG to start")
+        print("SU" _or_ "LG")
+        option = input()
+        if option == "SU"
+
+
 
 
