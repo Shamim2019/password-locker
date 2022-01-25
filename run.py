@@ -26,4 +26,8 @@ def create_account(accountusername,accountname,accountpassword):
 def save_account(user):
     user.save_account()
 
+def  delete_account(user):
+  user.delete_account()
+
+
 
