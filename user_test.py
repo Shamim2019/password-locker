@@ -1,3 +1,4 @@
+from operator import length_hint
 import unittest
 from user import user
 
@@ -20,7 +21,9 @@ class Testuse(unittest.TestCase):
        test_user.save_user()
 
        self.new_user.delete_user() 
-
+       self.assertEqual(len(user.user_list),1)
+    if _name_ ""  '_main_':
+        unittest.main()
 
 
 
