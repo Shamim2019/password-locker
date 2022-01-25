@@ -31,6 +31,11 @@ def  delete_account(user):
 
 def find_account(number):
     return credentials.find_by_number(number)
-    
+
+def display_accounts():
+    return credentials.display_accounts()
+
+def main():
+     
 
 
