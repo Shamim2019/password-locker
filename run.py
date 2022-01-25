@@ -29,5 +29,8 @@ def save_account(user):
 def  delete_account(user):
   user.delete_account()
 
+def find_account(number):
+    return credentials.find_by_number(number)
+    
 
 
