@@ -1,7 +1,5 @@
 import random
 import string
-from tkinter import SEL_FIRST
-from tokenize import Number 
 
 
 class user:
