@@ -1,4 +1,5 @@
 
+from ntpath import join
 import string
 # import  random 
 import random
@@ -71,6 +72,21 @@ def main():
             if find_user(loginpassword):
                 print("\n")
                 print("you can create multiple accounts (AC) and also view them(VC)")
-                print("_"60)
+                print("-"60)
                 print("AC" _or_"VC")
-                
+                choose = input()
+                print("\n")
+                if choose == "AC" :
+                    print("Add credential Account")
+                    print("-"25)
+                    accountusername=loginusername
+                    print("Account Name")
+                    accountname = input()
+                    print("\n")
+                    print("Generate automatic password(G) or Create new password(C)")
+                    decision = input
+                    if decision =="G":
+                        characters = string.ascii_letters .string_digits
+                        accountpassword = "",join(choose(characters)for x in range(random.randint(6,16)))
+
+
