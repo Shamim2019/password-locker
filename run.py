@@ -3,6 +3,7 @@ import string
 # import  random 
 import random
 from tokenize import Name
+from unicodedata import name
 from user import User
 from user import credentials
 
@@ -52,5 +53,24 @@ def main():
           username = input()
           print("Set your password..")
           userpassword = input()
-         
+          save_user(create_user(firstname,lastname,username,userpassword))
+          print("Your account was created succesfully.These are ur account details")
+          print("_"10)
+          print("f*name:{firstname}{lastname} \nusername:{username} \npassword:{userpassword}")
+          print("\nuse Login to your account with your details")
+          print("\n \n")
+          # for user in display_user
+          # prnt("f*name{user.firstname}{user.lastname}....{username}")
+     
 
+        elif option == "LG":
+            print("your username")
+            loginusername = input()
+            print("your password")
+            loginpassword = input()
+            if find_user(loginpassword):
+                print("\n")
+                print("you can create multiple accounts (AC) and also view them(VC)")
+                print("_"60)
+                print("AC" _or_"VC")
+                
