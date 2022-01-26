@@ -45,7 +45,7 @@ def main():
         option = input()
         if option == "SU":
           print("Create Account")
-          print("_"10)
+        #   print("_"10)
           print("Enter your First Name ..")
           firstname = input()
           print("Enter your Last Name..")
@@ -56,7 +56,7 @@ def main():
           userpassword = input()
           save_user(create_user(firstname,lastname,username,userpassword))
           print("Your account was created succesfully.These are ur account details")
-          print("_"10)
+        #   print("_"10)
           print("f*name:{firstname}{lastname} \nusername:{username} \npassword:{userpassword}")
           print("\nuse Login to your account with your details")
           print("\n \n")
@@ -72,7 +72,7 @@ def main():
             if find_user(loginpassword):
                 print("\n")
                 print("you can create multiple accounts (AC) and also view them(VC)")
-                print("-"60)
+                # print("-"60)
                 print("AC"_or_"VC"
                 choose = input()
                 print("\n")
