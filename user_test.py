@@ -1,3 +1,4 @@
+from cgi import test
 from operator import length_hint
 import unittest
 from user import user
@@ -22,7 +23,7 @@ class Testuse(unittest.TestCase):
 
        self.new_user.delete_user() 
        self.assertEqual(len(user.user_list),1)
-    if _name_ ""  '_main_':
+    if __name__ =='_main_':
         unittest.main()
 
 
