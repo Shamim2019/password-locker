@@ -73,7 +73,7 @@ def main():
                 print("\n")
                 print("you can create multiple accounts (AC) and also view them(VC)")
                 print("-"60)
-                print("AC" _or_"VC")
+                print("AC"_or_"VC"
                 choose = input()
                 print("\n")
                 if choose == "AC" :
@@ -88,5 +88,35 @@ def main():
                     if decision =="G":
                         characters = string.ascii_letters .string_digits
                         accountpassword = "",join(choose(characters)for x in range(random.randint(6,16)))
+                        print("f*password:{accountpassword}")
+                    elif decision == "C":
+                        print("Enter your password")    
+                        accountpassword=input()
+                    else :
+                        print("please put a valid choice") 
+                    save_account(create_account(accountusername,accountname,accountpassword)) 
+                    print("\n") 
+                    print("f*name:{accountusername} \naccount Name:{accountname} \npassword:{accountpassword}") 
+                
+                elif choose=="VC":
+                    if find_account(accountusername):
+                     print("List of my created accounts:")  
+                     print("-"25)
+                     for user in display_accounts():
+                         print("f*Account:{user.accountname} \npassword:{user.accountpassword} \n \n")
+                    else:
+                        print("Invalid credentials!") 
+                else:
+                    print("PLEASE TRY AGAIN!") 
+                    print("\n") 
+            else:
+                print("WRONG INFORMATION PLEASE TRY AGAIN THANK YOU!")    
+                print("\n")   
+        else:
+            print("kindly choose a valid option")  
+            print("\n") 
+
+if __name__ == '_main_':
+    main()
 
 
