@@ -1,7 +1,8 @@
 
 import string
-# from random import 
+# import  random 
 import random
+from tokenize import Name
 from user import User
 from user import credentials
 
@@ -38,10 +39,18 @@ def display_accounts():
 def main():
     while True:
         print("Welcome to password locker write SU or LG to start")
-        print("SU" _or_ "LG")
+        print("SU"_or_"LG")
         option = input()
-        if option == "SU"
-
-
-
+        if option == "SU":
+          print("Create Account")
+          print("_"10)
+          print("Enter your First Name ..")
+          firstname = input()
+          print("Enter your Last Name..")
+          lastname =input()
+          print("Set your username..")
+          username = input()
+          print("Set your password..")
+          userpassword = input()
+         
 
